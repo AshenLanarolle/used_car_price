@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Used Car Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	
+    <h2>year</h2>
+    <input class="year"  type="text" id="cyear" class="floatLabel" name="Caryear" >
+
+    <h2>km_driven</h2>
+    <input class="km_driven"  type="text" id="ckmdriven" class="floatLabel" name="km" >
+
+    <h2>Milage</h2>
+    <input class="mileage"  type="text" id="cmilage" class="floatLabel" name="milage" >
+    
+    <h2>Engine</h2>
+    <input class="engine"  type="text" id="cengin" class="floatLabel" name="ecapacity" >
+    
+    <h2>Seats</h2>
+    <input class="seats"  type="text" id="cseats" class="floatLabel" name="carseats" >
+
+
+    
+  </form>
+<from class="from">
+	<h2>Fuel type</h2>
+	<div>
+  <select class="fuel" name="" id="cfuel">
+    <option value="" disabled="disabled" selected="selected">Choose fuel type</option>
+		<option>Petral</option>
+        <option>Deasal</option>
+  </select>
+    </div>
+
+    <h2>seller type</h2>
+	<div>
+  <select class="seller" name="" id="cseller">
+    <option value="" disabled="disabled" selected="selected">Choose seller type</option>
+		<option>Individual</option>
+        <option>Delar</option>
+  </select>
+    </div>
+
+    <h2>Car type</h2>
+	<div>
+  <select class="Carname" name="" id="cbrand">
+    <option value="" disabled="disabled" selected="selected">Choose car Brand</option>
+    <option>Toyota</option>
+        <option>Nisan</option>
+  </select>
+    </div>
+
+    <h2>transmission</h2>
+	<div>
+  <select class="transmission" name="" id="ctrans">
+    <option value="" disabled="disabled" selected="selected">Choose transmission type</option>
+		<option>Manual</option>
+        <option>Auto</option>
+  </select>
+    </div>
+
+    <h2>Owner</h2>
+	<div>
+  <select class="owner" name="" id="cowner">
+    <option value="" disabled="disabled" selected="selected">Choose fuel type</option>
+		<option>1st owner</option>
+        <option>2nd owner</option>
+  </select>
+    </div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
